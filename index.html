@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>泛直播-首页</title>
+	
+	<!--导航栏的样式和部分标签的样式-->
+	<link rel="stylesheet" type="text/css" href="/assets/css/base.css" media="all" />
+	<!--蛛网的样式-->
+	<link rel="stylesheet" media="screen" href="/assets/css/particles.css">
+	<!--打字机的样式-->
+	<link rel="stylesheet" type="text/css" href="/assets/css/typeit.min.css">
+
+</head>
+<body>
+	<!--导航栏-->
+	<div id="header"></div>
+	<script src="/assets/js/jquery-2.1.1.min.js"></script>
+	<script>
+	$.get("header.tpl", function(result){      
+	      $("#header").html(result);
+	    });
+	</script>
+	<!--蛛网和主要内容-->
+	<div id="particles-js" style="width:1520px;">
+		<div id="img">
+			<img src="/assets/img/main_name2 .png">
+			<img src="/assets/img/main_name4.png" style="margin-top:400px;margin-left: 400px" width="200px">
+			<section>
+				<p class="example3"></p><!--打印机的内容-->
+		    </section>
+		</div>
+	</div>
+
+	<!--蛛网的js-->
+    <script src="/assets/js/particles.min.js"></script>
+	<script src="/assets/js/app.js"></script>
+	<!--打印机的js-->
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="/assets/js/typeit.min.js"></script>
+	<script src="/assets/js/scripts.min.js"></script><!--打印机的内容速度等设置-->
+	
+</body>
+</html>

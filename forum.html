@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>泛直播-论坛</title>
+    
+	<!--导航栏的样式和部分标签的样式-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css" media="all" />
+    <!--标签的样式-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/label.css"/>
+    <!--卡片的样式-->
+    <link href="/assets/css/ripple.min.css" rel="stylesheet" type="text/css" />
+
+    <!--发表栏目的样式-->
+    <link rel="stylesheet" href="/assets/css/trumbowyg.css">
+
+    <!--设置点击卡片后触摸的颜色-->
+    <style>
+        .red-ripple > .material-ink {
+        background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <script src="/assets/js/jquery-2.1.1.min.js"></script>
+    <script>
+    $.get("header.tpl", function(result){      
+            $("#header").html(result);
+        });
+    </script>
+    <div id="tag">
+        <div style="display:flex">
+            <!--标签搜索栏-->
+            <div class="search">
+                <div style="display:flex;width: 1000px;height: 150px;margin-top: 50px;margin-left: 100px;">
+                    <img src="/assets/img/logo.png" width="150px">
+                    <img src="/assets/img/mian_name2.png">
+                </div>
+                <div class="selectBox">
+                    <div class="inputCase">
+                        <div id="role_select" class="select-menu-input imitationSelect"></div>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                    <ul class="selectUl">
+                    </ul>
+                </div>
+            </div>
+            <!--待选标签栏-->
+            <div class="label">
+                <span class="label_root"><span>王者荣耀</span><i class="close" oliid="3">x</i></span>
+                <span class="label_root"><span>刺激战场</span><i class="close" oliid="4">x</i></span>
+                <span class="label_root"><span>守望先锋</span><i class="close" oliid="5">x</i></span>
+                <span class="label_root"><span>炉石传说</span><i class="close" oliid="6">x</i></span>
+                <span class="label_root"><span>魔兽世界</span><i class="close" oliid="7">x</i></span>
+                <span class="label_root"><span>旭旭宝宝</span><i class="close" oliid="8">x</i></span>
+                <span class="label_root"><span>张大仙</span><i class="close" oliid="9">x</i></span>
+                <span class="label_root"><span>韦神</span><i class="close" oliid="10">x</i></span>
+                <span class="label_root"><span>uzi</span><i class="close" oliid="11">x</i></span>
+                <span class="label_root"><span>网易第五人格手游</span><i class="close" oliid="12">x</i></span>
+                <span class="label_root"><span>熊猫虚伪</span><i class="close" oliid="13">x</i></span>
+                <span class="label_root"><span>Oldba1</span><i class="close" oliid="14">x</i></span>
+                <span class="label_root"><span>英雄联盟官方赛事</span><i class="close" oliid="15">x</i></span>
+            </div>
+        </div>
+        <!--卡片栏-->
+        <div style="display: flex">
+            <div class="card">
+                <div class="material-card material-shadow-1 material-hover">
+                    <div class="material-ripple red-ripple">
+                        <h1 class="card_title">
+                            <img src="/assets/img/topic.png" width="40px" style="margin-left:10px;margin-top:5px">
+                            <a href="/forum_content/forum_content[1].html">[人物专访]SpaceCraft电子竞技俱乐部经理Zad</a>
+                        </h1>
+                        <p>近日，国内一家新的星际争霸2战队——SpaceCraft电子竞技俱乐部（以下简称SC）成立。作为国内星际争霸2项目的新生力量，SC的情况备受关注，我们在第一时间采访了SpaceCraft电子竞技俱乐部经理Zad，为大家带来更多信息。</p>
+                    </div>
+                </div>
+                <div class="material-card material-shadow-1 material-hover" style="margin-top:50px">
+                    <div class="material-ripple red-ripple">
+                        <h1 class="card_title">
+                            <img src="/assets/img/topic.png" width="40px" style="margin-left:10px;margin-top:5px">
+                            <a href="">【我们是冠军！！！！！】亚运会电竞表演赛LOL中国队夺冠了！！！</a>
+                        </h1>
+                        <p>顺风简自豪，逆风狂小狗，绝境uzi!!!!<br>
+                        对不起我真的太激动了。uzi中路高地塔击杀faker拿一下真的泪目。<br>
+                        从此澡酱再也不是“完美无霞” s7的仇终于爆了</p>
+                    </div>
+                </div>
+                <div class="material-card material-shadow-1 material-hover" style="margin-top:50px">
+                    <div class="material-ripple red-ripple">
+                        <h1 class="card_title">
+                            <img src="/assets/img/topic.png" width="40px" style="margin-left:10px;margin-top:5px">
+                            <a href="">TGA2018结束，《战神》获年度最佳游戏，C9获最佳电竞团队！</a>
+                        </h1>
+                        <p>12月8日上午，TGA2018颁奖盛会正式结束，清泉就先奉上一波TGA2018完完整整的获奖名单</p>
+                    </div>
+                </div>
+                <div class="material-card material-shadow-1 material-hover" style="margin-top:50px">
+                    <div class="material-ripple red-ripple">
+                        <h1 class="card_title">
+                            <img src="/assets/img/topic.png" width="40px" style="margin-left:10px;margin-top:5px">
+                            <a href="">[格式]央视为何不播亚运会电竞的决赛？</a>
+                        </h1>
+                        <p>我看懂球帝有人在说这事<br><img src="/assets/img/content.png" width="500px"></p>
+                    </div>
+                </div>
+                <div class="target">
+                </div>
+                <!--发表栏-->
+                <div class="material-card material-shadow-1 material-hover" style="margin-top:50px">
+                    <form>
+                        <div class="card_title">
+                            <a style="margin:20px 20px 20px 20px;">发表新帖:</a>
+                            <input type="button" value="发表" class="publish">
+                            <input type="text" placeholder="请填写标题:" name="title">
+                        </div>
+                        <div id="odiv" style="display:none;position:absolute;z-index:100;">
+                            <img src="/assets/img/sx.png" title="缩小" border="0" alt="缩小" onclick="sub(-1);">
+                            <img src="/assets/img/fd.png" title="放大" border="0" alt="放大" onclick="sub(1)">
+                            <img src="/assets/img/cz.png" title="重置" border="0" alt="重置" onclick="sub(0)">
+                            <img src="/assets/img/sc.png" title="删除" border="0" alt="删除" onclick="del();odiv.style.display='none';">
+                        </div>
+                        <div  onmousedown="show_element(event)" style="clear:both" id="customized-buttonpane" class="editor"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--点击标签的js-->
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="/assets/js/modify_select.js"></script>
+    <!--点击卡片的样式-->
+    <script src="/assets/js/ripple.min.js"></script>
+    <!--发表框内格式化js-->
+    <script src="/assets/js/trumbowyg.js"></script>
+    <!--<script src="/assets/js/trumbowyg.base64.js"></script>-->
+    <!--发表的js-->
+    <script src="assets/js/publish.js"></script>
+</body>
+</html>

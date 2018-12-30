@@ -1,0 +1,122 @@
+html,body{
+	height:100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.selectBox{
+	width: 800px;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #ccc;
+	margin: auto;
+	margin-top: 20px;
+}
+.inputCase{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.inputCase input.imitationSelect{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	display: block;
+	text-indent: 20px;
+	cursor: default;
+}
+.inputCase i.fa{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: #007AFF;
+}
+.fa{
+	cursor: pointer;
+}
+.selectUl{
+	display: none;
+	padding: 0;
+	margin: 0;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	/*border-bottom: 1px solid #ccc;*/
+	/*border-left: 1px solid #ccc;*/
+	/*border-right: 1px solid #ccc;*/
+	width: 100%;
+	margin-left: -1px;
+}
+.selectUl li{
+	height: 50px;
+	line-height: 50px;
+	list-style: none;
+	text-indent: 30px;
+	border-bottom: 1px solid #ccc;
+	/*border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;*/
+}
+.selectUl li:last-child{
+	border-bottom: 0 none;
+}
+.selectUl li:hover{
+	background: #ddd;
+}
+.selectUl li:last-child{
+	border-bottom: 0 none;
+}
+.person_root {
+    width: auto;
+    margin-top: 4px;
+    margin-left: 5px;
+    border: 1px solid #99CC99;
+    color: #666600;
+    border-radius: 3px;
+    display: block;
+	float: left;
+	background-color: #99CC99
+}
+.person_root span:nth-child(1) {
+    line-height: 40px;
+    display: block;
+    float: left;
+    width: auto;
+    height: 40px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 0px;
+    border: 0 none;
+    padding-right: 5px;
+    color: #666600;
+}
+.person_root i {
+    width: 30px;
+    height: 30px;
+    display: block;
+    padding: 0;
+    margin: 3px 8px 0px 0px;
+    float: left;
+    line-height: 30px;
+    text-align: center;
+    font-style: normal;
+    text-indent: 0px;
+    cursor: pointer;
+}
+#role_select{
+	font-size: 16px;
+	height: 100%;
+}
+.select-menu-div i {
+    color: #666600;
+    cursor: pointer;
+}
+.actived_li{
+	color: #666600;
+}
+
+.clear{
+	clear: both;
+	float: none;
+}

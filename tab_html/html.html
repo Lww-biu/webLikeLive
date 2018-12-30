@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>泛直播-赛事-守望先锋</title> 
+
+    <link href="/assets/css/ripple.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="/assets/css/trumbowyg.css">
+
+</head>
+
+
+<body>
+  <div class="page-header" style="border-bottom: 1px solid #eee;">
+      <h2 style="font-size: 31.5px;text-align: center;font-weight: normal;">
+          守望先锋
+      </h2>
+  </div>
+  <div class="material-card material-shadow-1 material-hover">
+    <div class="material-ripple red-ripple">
+      <h1 class="card_title">
+        <img src="/assets/img/topic.png" width="40px" style="margin-left:10px;margin-top:5px">
+        <a href="">[置顶]守望先锋世界杯中国队，获得亚军！</a>
+      </h1>
+      <p>在11月4月早间结束的守望先锋世界杯决赛中，中国队不敌韩国队屈居亚军。韩国这支王者之师成功卫冕，达成守望先锋世界杯三连冠成就，再次向世界证明了他们的统治力。</p>
+    </div>
+  </div>
+  <div class="material-card material-shadow-1 material-hover">
+    <div class="material-ripple red-ripple">
+      <h1 class="card_title">
+        <img src="/assets/img/topic.png" width="40px" style="margin-left:10px;margin-top:5px">
+        <a href="">关于2018《守望先锋》世界杯总决赛的64件小事</a>
+      </h1>
+      <p>其实我想了很久，要不要再写一篇暴雪嘉年华总决赛的回顾。因为其实我决赛结束后到现在的状态一直不好，心里闷闷的，又说不出什么感受。</p>
+    </div>
+  </div>
+  <div class="target">
+  </div>
+  <div class="material-card material-shadow-1 material-hover" style="margin-top:50px">
+    <form>
+      <div class="card_title competition">
+        <a style="margin:20px 20px 20px 20px;">发表新帖:</a>
+        <input type="button" value="发表" class="publish">
+        <input type="text" placeholder="请填写标题:" name="title" style="width:865px">
+      </div>
+      <div id="odiv" style="display:none;position:absolute;z-index:100;">
+        <img src="/assets/img/sx.png" title="缩小" border="0" alt="缩小" onclick="sub(-1);">
+        <img src="/assets/img/fd.png" title="放大" border="0" alt="放大" onclick="sub(1)">
+        <img src="/assets/img/cz.png" title="重置" border="0" alt="重置" onclick="sub(0)">
+        <img src="/assets/img/sc.png" title="删除" border="0" alt="删除" onclick="del();odiv.style.display='none';">
+      </div>
+      <div  onmousedown="show_element(event)" style="clear:both" id="customized-buttonpane" class="editor"></div>
+    </form>
+  </div>
+  <script src="/assets/js/ripple.min.js"></script>
+    
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/trumbowyg.js"></script>
+  <script src="/assets/js/trumbowyg.base64.js"></script>
+
+  <script src="assets/js/publish.js"></script>
+</body>
+</html>
